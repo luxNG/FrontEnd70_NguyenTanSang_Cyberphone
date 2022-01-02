@@ -1,0 +1,74 @@
+.products {
+  margin: 100px 0;
+  .products__title {
+    h1 {
+      margin-bottom: 70px;
+      text-align: center;
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #1d365e;
+      letter-spacing: 0.015rem;
+    }
+  }
+
+  .product__container {
+    width: 80%;
+    margin: auto;
+    .row {
+      .card {
+        gap: 3px;
+        box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+        padding: 50px;
+        height: fit-content;
+        .img__cover {
+          width: 50%;
+          margin: auto;
+          img {
+            width: 100%;
+          }
+        }
+
+        .card-body {
+          .card-text {
+            text-align: start;
+            padding: 0 20px;
+            margin: 10px 0;
+            font-size: 14px;
+            font-weight: 400;
+            color: #1d365e;
+          }
+          .card__check {
+            height: 31px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            .cardPhone__rating {
+              padding: 10px 0;
+              font-size: 15px;
+              color: #f9d412;
+            }
+            .buy__button {
+              color: $primary-main;
+              border: none;
+              background: #f5f9fe;
+              box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 4px #fff;
+            }
+            :hover {
+              box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
+            }
+          }
+
+          .card__price {
+            display: flex;
+            justify-content: space-around;
+            h4 {
+              font-size: 20px;
+              font-weight: 700;
+              color: #1d365e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
